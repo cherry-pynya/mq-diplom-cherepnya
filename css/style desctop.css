@@ -16,6 +16,7 @@
     width: 100%;
     position: relative;
     margin: 0;
+    min-width: 320px;
   }
 
   .popup {
@@ -172,13 +173,13 @@
   }
 
   .wish-text-input {
-    padding: 12px 0 0 12px;
+    padding: 12px 12px 12px 12px;
     margin-top: 12px;
-    max-width: 319px;
+    max-width: 307px;
     max-height: 113px;
     width: 100%;
     height: 100%;
-    min-width: 319px;
+    min-width: 307px;
     min-height: 113px;
     border: none;
     background-color: #f4f7f6;
@@ -199,7 +200,7 @@
   }
 
   .popup-button:hover {
-    border-top: 3px solid #b59f5b;
+    background-color: #f2d57c;
   }
 
   .popup-close {
@@ -345,7 +346,7 @@
   .main-page {
     display: flex;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1170px;
     height: 100%;
     margin-right: auto;
     margin-left: auto;
@@ -490,7 +491,6 @@
   
   .side-bar {
     max-width: 272px;
-    padding-right: 20px;
     width: 100%;
     height: 100%;
     display: flex;
@@ -641,7 +641,6 @@
   }
   
   .newsletter-container {
-    max-height: 164px;
     width: 100%;
     height: 100%;
     display: flex;
@@ -960,6 +959,7 @@
     padding: 0;
     margin: 0;
     align-self: flex-start;
+    width: 100%;
   }
   
   .number-of-options {
@@ -1211,7 +1211,14 @@
     font-family: opensans-bold;
     color: #b59f5b;
     font-size: 1em;
-    margin-right: 20px;
+  }
+
+  .trend-tag-list {
+    padding: 0 20px 0 0;
+  }
+
+  .trend-tag-list:last-child {
+    padding: 0;
   }
 
   .trend-article-name-box {
@@ -1253,19 +1260,21 @@
     margin-right: 0;
   }
 
-  .good-picture {
+  .good-image {
     width: 100%;
+    z-index: -3;
     height: 100%;
-    display: flex;
     max-width: 300px;
-    min-height: 200px;
+    max-height: 200px;
     background-color: #000000;
     margin: 0 auto 0 auto;
   }
 
-  .good-image {
+  .good-img-default {
     width: 100%;
-    z-index: -3;
+    height: 100%;
+    max-width: 300px;
+    max-height: 200px;
   }
 
   .good-body {
@@ -1339,6 +1348,11 @@
     font-size: 125%;
     color: #eeeeee;
     text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  .buy-button:hover {
+    background-color: #f2d57c;
   }
 
   .good-video-link {
@@ -1560,6 +1574,7 @@
     cursor: pointer;
     align-self: flex-end;
     margin-right: 14px;
+    order: -3;
   }
 
   .menu-button::before {
@@ -1653,7 +1668,7 @@
   }
 
   .email-field {
-    max-width: 100%;
+    max-width: calc(100% - 20px);
   }
 
   .social-media-list {
@@ -1682,4 +1697,6 @@
     display: flex;
     height: 100%;
   }
+
+
 } 
